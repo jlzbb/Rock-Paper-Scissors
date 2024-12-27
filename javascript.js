@@ -13,3 +13,16 @@ function getComputerChoice() {
     else (getRandom() > 0.6 && getRandom() <= 1)
         return "scissors";
 }
+
+let humanChoice = prompt("enter paper, rock, or scissors!");
+
+function getHumanChoice() {
+    if (humanChoice == "paper")
+        return "paper";
+    else if (humanChoice == "rock")
+        return "rock";
+    else if (humanChoice == "scissors")
+        return "scissors";
+    else (humanChoice == 0 || undefined)
+        return "try again!";
+}
