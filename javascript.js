@@ -4,9 +4,12 @@ function getRandom() {
 
 function getComputerChoice() {
     const random = getRandom();
-    if (random <= 0.3) return "rock";
-    else if (random <= 0.6) return "paper";
-    else return "scissors";
+    if (random <= 0.3) 
+        {return "rock";}
+    else if (random <= 0.6) 
+        {return "paper";}
+    else 
+        {return "scissors";}
 }
 
 function getHumanChoice() {
@@ -15,7 +18,8 @@ function getHumanChoice() {
         if (humanChoice === "paper" || humanChoice === "rock" || humanChoice === "scissors") {
             return humanChoice;
         }
-        alert("Invalid input! Please enter paper, rock, or scissors.");
+        else {
+        alert("Invalid input! Please enter paper, rock, or scissors.");}
     }
 }
 
